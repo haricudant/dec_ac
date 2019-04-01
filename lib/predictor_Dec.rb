@@ -50,7 +50,7 @@ end
 class LaundryAmenities < Rentdecorator
     def initialize(real_cost)
         super(real_cost)
-        @extra_cost = 23
+        @extra_cost = 53
         @benefits = "shared laundry room, washers & dryers in the unit, laundry service"
     end
     
@@ -66,7 +66,7 @@ end
 class RecreationAmenities < Rentdecorator
     def initialize(real_cost)
         super(real_cost)
-        @extra_cost = 20
+        @extra_cost = 40
         @benefits = "Spa, Community events & classes, Media Room"
     end
     
@@ -84,8 +84,8 @@ end
 class MiscellaneousAmenities< Rentdecorator
     def initialize(real_cost)
         super(real_cost)
-        @extra_cost = 23
-        @benefits = "Storage, Security Cameras, Gated access, Valid Trash"
+        @extra_cost = 20
+        @benefits = "Recycling center,Doorstep recycling collection,Playground"
     end
     
     def cost
@@ -100,8 +100,8 @@ end
 class ParkingAmenities< Rentdecorator
       def initialize(real_cost)
         super(real_cost)
-        @extra_cost = 35
-        @benefits = "Storage, Security Cameras, Gated access, Valid Trash,Assigned parking spaces,Bike storage lockers,Shared car services"
+        @extra_cost = 36
+        @benefits = "lljkjk"
       end
     
       def cost
@@ -118,7 +118,7 @@ class PetAmenities< Rentdecorator
       def initialize(real_cost)
         super(real_cost)
         @extra_cost = 35
-        @benefits = "Storage, Security Cameras, Gated access, Valid Trash,Assigned parking spaces,Bike storage lockers,Shared car services"
+        @benefits = "Dog washing station,Large dogs allowed,Multiple pets allowed"
       end
     
       def cost

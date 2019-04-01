@@ -28,7 +28,7 @@ class CalsController < ApplicationController
     @cal = Cal.new()
   
     @cal.name = params[:cal][:name]
-    #@cal.description = params [:cal][:description]
+    #@cal.description = params[:cal][:description]
     @cal.rent = params[:cal][:rent]
     myCal = Basicexpense.new(@cal.rent)
     
@@ -50,7 +50,7 @@ class CalsController < ApplicationController
     end
 
     @cal.rent = myCal.cost
-    @cal.description = myCal.benefits
+    #@cal.description = myCal.benefits
 
     respond_to do |format|
       if @cal.save
